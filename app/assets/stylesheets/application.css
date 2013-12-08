@@ -1,13 +1,289 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+body {
+
+	padding: 0;
+	margin: 0;
+}
+
+
+.header-outer {
+
+	position: fixed;
+	height: 70px;
+	top: 0;
+	background-color: #0B333F;
+	border-bottom: 2px solid #f0bf00;
+	width: 100%;
+	z-index: 100;
+
+}
+
+.header-inner {
+
+	width: 980px;
+	margin: 0 auto;
+
+}
+
+.logo {
+
+	float: left;
+	color: white;
+	padding-top: 12px;
+	font-family: "Patua One", Arial, sans-serif;
+	font-size: 2.5em;
+}
+
+.logo:hover {
+	color: #f0bf00;
+}
+
+.nav {
+
+	padding-top: 25px;
+	float: right;
+
+}
+
+.nav ul {
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+.nav li {
+
+	display: inline;
+
+}
+
+.nav a {
+
+	text-decoration: none;
+	padding: 8px 20px;
+	color: white;
+	font-family: "Patua One", Arial, sans-serif;
+
+}
+
+.nav a:hover {
+
+	color: #fff;
+	background-color: #f0bf00;
+
+}
+
+.active {
+
+	color: #fff !important;
+	background-color: #2e3639	
+
+}
+
+
+.jumbotron {
+
+	height: 420px;
+	font-family: "Patua One", Arial, sans-serif;
+	position: relative;
+	padding: 70px 0;
+	margin-top: 40px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
+	
+	background-image: url("/assets/lasok.jpg");
+	/*background-image: url(asset-path('lasok.jpg'));*/
+	/*background:url('../img/lasok.jpg')*/ no-repeat center center fixed;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#020031',endColorstr='#6d3353',GradientType=1);
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0,0,0,.2),inset 0 -3px 7px rgba(0,0,0,.2);
+
+}
+
+.jumbotron h1 {
+	font-size: 3.5em;
+}
+
+.jumbotron h2 {
+	font-size: 2.5em;
+}
+
+.jumbotron p {
+
+	padding-top: 40px;
+	font-size: 1.8em;
+	font-family: "Oswald", Arial, sans-serif;
+}
+
+.jumbotron input {
+	width: 400px;
+	padding-left: 10px;
+	height: 50px;
+	border: solid 1px #E3E7E4;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-family: 'Patua One',cursive;
+}
+
+.jumbotron button {
+
+	background: none repeat scroll 0 0 #F0BF00 !important;
+	height: 50px;
+	width: 185px; 
+	border: solid 1px #E3E7E4;
+	border-radius: 3px 3px 3px 3px;
+	border: 0 none;
+	color: #FFFFFF;
+	font-size: 1.2em;
+	font-family: 'Patua One',cursive;
+	letter-spacing: 0.05em;
+    text-shadow: none;
+    text-transform: none;
+
+
+/*	background: none repeat scroll 0 0 #F0BF00 !important;
+    border: 0 none;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-family: 'Patua One',cursive;
+    font-size: 1.3125em;
+    height: 50px;
+    letter-spacing: 0.05em;
+    text-shadow: none;
+    text-transform: none;
+    width: 185px;  */
+}
+
+.highlight {
+	color: #f0bf00;
+}
+
+.yellow {
+
+	/*background:url('../img/yellow.png')*/
+	background-image: url("/assets/yellow.png"); repeat-x 0 0; 
+	height: 406px;
+	z-index: 500;
+	box-shadow: 0 5px 16px;
+
+}
+
+.yellow p{
+
+	font-family: "Patua One", Arial, sans-serif;
+	font-size: 40px;
+	text-align: center;
+	padding: 5px;
+	margin: 0 auto;
+	color: white;
+}
+
+.yellow-box {
+	padding-top: 100px;
+}
+
+.portfolio-con {
+	width: 1300px;
+	font-family: "Patua One", Arial, sans-serif;
+	text-align: center;
+	margin: 50px auto;
+	margin-bottom: 20px !important ;
+
+}
+
+.portfolio-con p {
+	font-family: "Quattrocento", Arial, sans-serif;
+	line-height: 1.5em;
+
+}
+
+.portfolio {
+	float: left;
+	text-align: left;
+	width: 370px;
+	padding: 5px 20px 5px 35px;
+	margin-bottom: 20px !important;
+}
+
+.portfolio img {
+	width: 370px;
+	height: 189px;
+}
+
+
+.team-con{
+	
+	padding: 4.75em 0;
+	clear: left;
+	background-color: #312A1E;
+	text-align: center;
+	color: white;
+	min-width: 1200px;
+	font-family: "Patua One", Arial, sans-serif;
+
+}
+
+.team-con h1{
+	padding: 20px;
+}
+
+.team-cen {
+	margin: 0 auto;
+	padding-left: 160px;	
+
+}
+
+.team {
+	width: 170px;
+	text-align: center;
+	padding: 10px 30px 20px 20px;
+	margin: 0 auto;
+	background-color: #312A1E;
+	float: left;
+}
+
+.team img{
+	border-radius: 100px;
+}
+
+.team h3{
+	padding: 0;
+}
+
+.team-after {
+	clear: both;
+	width: 970px;
+	margin-left: 220px;
+	margin-right: 220px;
+
+}
+
+.team-after h2{
+	padding-top: 60px;
+}
+
+.padding {
+	margin-bottom: 20px !important;
+}
+
+.grey {
+	color: #A5A5A2;
+	font-weight: 400;
+}
+	
+.footer {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	text-align: center;
+	padding-top: 35px;
+}
+
+.footer a {
+	color: black;
+}
+
