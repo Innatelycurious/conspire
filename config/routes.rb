@@ -1,4 +1,5 @@
 Conspire::Application.routes.draw do
+  devise_for :users
 root "pages#home"
 
 get "team" => "pages#team"

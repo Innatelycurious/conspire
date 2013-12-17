@@ -1,3 +1,4 @@
+
 body {
 
 	padding: 0;
@@ -128,6 +129,7 @@ body {
 	font-family: 'Patua One',cursive;
 }
 
+
 .jumbotron button {
 
 	background: none repeat scroll 0 0 #F0BF00 !important;
@@ -142,6 +144,7 @@ body {
 	letter-spacing: 0.05em;
     text-shadow: none;
     text-transform: none;
+ 
 
 
 /*	background: none repeat scroll 0 0 #F0BF00 !important;

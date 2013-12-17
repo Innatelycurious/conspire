@@ -1,52 +1,26 @@
-<!DOCTYPE html>
 
-<html class="no-js" lang="en" > 
-<meta charset="utf-8">
-
-<head>
-  <title>Conspire!</title>  
-  <link rel="stylesheet" href="css/custom.css" />
-  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
-
-
-</head>
-<body>
-
-	<div class="header-outer">
-		<div class="header-inner">
-			<div class="logo">
-				Conspire!
-			</div>
-
-			<div class="nav">
-				<ul>
-					<li><a href="#">Contact</a></li>
-					<li><%= link_to "Team", team_path %></li>
-					<li><a href="#">Register</a></li>
-					<li><a class="active" href="#">Log In</a></li>
-
-				</ul>
-			</div>
-		</div>	
-	</div>
-
-		<div class="jumbotron">
+<div class="jumbotron">
 		
 		<h1><span class="highlight">Conspire!</span></h1>
 		<h2>Because Splitting Work Makes For Happier Law Students</h2>
+		<% if user_signed_in? %>
+          # do something
+     	<% else %>
+      	<%= link_to "Log in", new_user_session_path, class: "btn" %> 
+        <%= link_to "Sign up", new_user_registration_path %> 
+		<% end %>
 
 			
-		<p>Signup for our updates</p>
+<!--		<p>Signup for our updates</p>
 
 		<form>
 			<input type="email" placeholder="Enter Your Email Address Here" /> 
 			<button type="submit" >Get Invited</button>
 		</form>
 
-		</div>
+-->
+
+</div>
 
 			<div class="yellow">
 				<div class="yellow-box"></div>
@@ -55,6 +29,7 @@
 				<p>Do you want a Life outside of Law School?</p>
 				<p>Put in a Little effort Once and</p>
 				<p>Get 7even Times the Results.</p>
+
 
 				</div>
 
